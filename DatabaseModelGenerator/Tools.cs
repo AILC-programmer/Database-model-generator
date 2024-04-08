@@ -10,6 +10,12 @@ namespace DatabaseModelGenerator
 {
     internal class Tools
     {
+        /// <summary>
+        /// Convet SQL data types to CLR Data types.
+        /// </summary>
+        /// <param name="type">SQL data type</param>
+        /// <param name="nullable">True, if this column in the database checked allow null box; otherwise, False.</param>
+        /// <returns>Returns the equivalent of the SQL data type in CLR.</returns>
         public static string ConvertSqlToClr(string type, bool nullable)
         {
             switch (type)
@@ -68,6 +74,13 @@ namespace DatabaseModelGenerator
 
         }
 
+        /// <summary>
+        /// Get all columns of the table in the database.
+        /// </summary>
+        /// <param name="TableSchema">The table schema in the database</param>
+        /// <param name="TableName">The name of the table whose columns you want to get.</param>
+        /// <param name="connectionString">The connection string of the database and server.</param>
+        /// <returns>Returns a list of ColumnModel, these are all columns of that table.</returns>
         public static async Task<List<ColumnModel>> getTableColumns(string TableSchema, string TableName, string connectionString)
         {
             var columns = new List<ColumnModel>();
@@ -132,6 +145,12 @@ namespace DatabaseModelGenerator
         
         private static BinaryFormatter formatter = new BinaryFormatter();
 
+        /// <summary>
+        /// Serialize an object to the path
+        /// </summary>
+        /// <param name="Path">The path of the file you want to serialize.
+        /// Remember, your path must have a file name.</param>
+        /// <param name="obj">That object you want to serialize.</param>
         public static void SerializeObject(string Path, ValuesModel obj)
         {
             try
@@ -148,6 +167,11 @@ namespace DatabaseModelGenerator
             }
         }
 
+        /// <summary>
+        /// Get the serialized file.
+        /// </summary>
+        /// <param name="Path">The path of the file serialized.</param>
+        /// <returns>Returns ValueModel object</returns>
         public static ValuesModel DeserializeObject(string Path)
         {
             try

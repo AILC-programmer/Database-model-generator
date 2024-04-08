@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "ed2c3bad-b0eb-4782-bb15-dc407e718c11": {
+      "ProjectGuid": "ed2c3bad-b0eb-4782-bb15-dc407e718c11",
+      "DisplayName": "DatabaseModelGenerator",
+      "ColorIndex": 0
+    }
+  },
+  "NextColorIndex": 1
+}

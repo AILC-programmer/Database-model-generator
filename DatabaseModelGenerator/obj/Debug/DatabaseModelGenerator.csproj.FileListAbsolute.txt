@@ -14,9 +14,9 @@ D:\Projects\C#\DatabaseModelGenerator\DatabaseModelGenerator\bin\Debug\DatabaseM
 D:\Projects\C#\DatabaseModelGenerator\DatabaseModelGenerator\bin\Debug\DatabaseModelGenerator.pdb
 D:\Projects\C#\DatabaseModelGenerator\DatabaseModelGenerator\obj\Debug\DatabaseModelGenerator.csproj.AssemblyReference.cache
 D:\Projects\C#\DatabaseModelGenerator\DatabaseModelGenerator\obj\Debug\DatabaseModelGenerator.csproj.SuggestedBindingRedirects.cache
-D:\Projects\C#\DatabaseModelGenerator\DatabaseModelGenerator\obj\Debug\DatabaseModelGenerator.Form1.resources
 D:\Projects\C#\DatabaseModelGenerator\DatabaseModelGenerator\obj\Debug\DatabaseModelGenerator.Properties.Resources.resources
 D:\Projects\C#\DatabaseModelGenerator\DatabaseModelGenerator\obj\Debug\DatabaseModelGenerator.csproj.GenerateResource.cache
 D:\Projects\C#\DatabaseModelGenerator\DatabaseModelGenerator\obj\Debug\DatabaseModelGenerator.csproj.CoreCompileInputs.cache
 D:\Projects\C#\DatabaseModelGenerator\DatabaseModelGenerator\obj\Debug\DatabaseModelGenerator.exe
 D:\Projects\C#\DatabaseModelGenerator\DatabaseModelGenerator\obj\Debug\DatabaseModelGenerator.pdb
+D:\Projects\C#\DatabaseModelGenerator\DatabaseModelGenerator\obj\Debug\DatabaseModelGenerator.MainForm.resources

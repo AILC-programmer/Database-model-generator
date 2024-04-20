@@ -233,7 +233,7 @@ namespace DatabaseModelGenerator
             classLines.Add("");
             classLines.Add($"namespace {RootNamespaceTextBox.Text}.Repositories");
             classLines.Add("{");
-            classLines.Add($"    public class {tableName}Repository : {SecondryNamespaceTextBox.Text}.GenericRepository<{getSingularNoun(tableName)}>, RepositoryAbstracts.I{tableName}Repository");
+            classLines.Add($"    public class {tableName}Repository : {SecondryNamespaceTextBox.Text}.{RepositoryNameTextBox.Text}<{getSingularNoun(tableName)}>, RepositoryAbstracts.I{tableName}Repository");
             classLines.Add("    {");
             classLines.Add($"        public {tableName}Repository(string connectionString) : base(connectionString)");
             classLines.Add("        {");
@@ -302,6 +302,7 @@ namespace DatabaseModelGenerator
                 MaxLength = MaxLengthTextBox.Text,
                 AllowNull = AllowNullTextBox.Text,
                 RepositoryInterface = RepositoryInterfaceTextBox.Text,
+                RepositoryName = RepositoryNameTextBox.Text,
                 Unique = UniqueAttributeTextBox.Text,
             };
             Tools.SerializeObject(filePath, model);
@@ -323,6 +324,7 @@ namespace DatabaseModelGenerator
             MaxLengthTextBox.Text = model.MaxLength;
             AllowNullTextBox.Text = model.AllowNull;
             RepositoryInterfaceTextBox.Text = model.RepositoryInterface;
+            RepositoryNameTextBox.Text = model.RepositoryName;
             UniqueAttributeTextBox.Text = model.Unique;
 
         }

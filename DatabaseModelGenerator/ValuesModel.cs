@@ -14,6 +14,7 @@ namespace DatabaseModelGenerator
         public string AllowNull { get; set; }
         public string MaxLength { get; set; }
         public string RepositoryInterface { get; set; }
+        public string RepositoryName { get; set; }
         public string Unique { get; set; }
     }
 }

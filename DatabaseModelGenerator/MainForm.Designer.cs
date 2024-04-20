@@ -66,6 +66,8 @@
             this.UserIDCheckBox = new System.Windows.Forms.CheckBox();
             this.SaveModelButton = new System.Windows.Forms.Button();
             this.OpenModelButton = new System.Windows.Forms.Button();
+            this.label14 = new System.Windows.Forms.Label();
+            this.RepositoryNameTextBox = new System.Windows.Forms.TextBox();
             this.ItemsPanel.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -75,7 +77,7 @@
             this.DataSourceTextBox.ForeColor = System.Drawing.Color.White;
             this.DataSourceTextBox.Location = new System.Drawing.Point(84, 14);
             this.DataSourceTextBox.Name = "DataSourceTextBox";
-            this.DataSourceTextBox.Size = new System.Drawing.Size(111, 25);
+            this.DataSourceTextBox.Size = new System.Drawing.Size(111, 21);
             this.DataSourceTextBox.TabIndex = 1;
             // 
             // label1
@@ -83,7 +85,7 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(10, 17);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(78, 17);
+            this.label1.Size = new System.Drawing.Size(68, 13);
             this.label1.TabIndex = 0;
             this.label1.Text = "Data source";
             // 
@@ -96,7 +98,7 @@
             this.DatabasesComboBox.FormattingEnabled = true;
             this.DatabasesComboBox.Location = new System.Drawing.Point(84, 44);
             this.DatabasesComboBox.Name = "DatabasesComboBox";
-            this.DatabasesComboBox.Size = new System.Drawing.Size(539, 25);
+            this.DatabasesComboBox.Size = new System.Drawing.Size(539, 20);
             this.DatabasesComboBox.TabIndex = 8;
             this.DatabasesComboBox.SelectedIndexChanged += new System.EventHandler(this.DatabasesComboBox_SelectedIndexChanged);
             // 
@@ -105,7 +107,7 @@
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(10, 47);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(69, 17);
+            this.label2.Size = new System.Drawing.Size(60, 13);
             this.label2.TabIndex = 7;
             this.label2.Text = "Databases";
             // 
@@ -133,7 +135,7 @@
             this.TablesCheckedListBox.FormattingEnabled = true;
             this.TablesCheckedListBox.Location = new System.Drawing.Point(13, 75);
             this.TablesCheckedListBox.Name = "TablesCheckedListBox";
-            this.TablesCheckedListBox.Size = new System.Drawing.Size(698, 284);
+            this.TablesCheckedListBox.Size = new System.Drawing.Size(698, 276);
             this.TablesCheckedListBox.TabIndex = 10;
             // 
             // TablesReaderProgressBar
@@ -153,9 +155,9 @@
             // 
             this.SelectAllCheckBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.SelectAllCheckBox.AutoSize = true;
-            this.SelectAllCheckBox.Location = new System.Drawing.Point(630, 369);
+            this.SelectAllCheckBox.Location = new System.Drawing.Point(640, 357);
             this.SelectAllCheckBox.Name = "SelectAllCheckBox";
-            this.SelectAllCheckBox.Size = new System.Drawing.Size(81, 21);
+            this.SelectAllCheckBox.Size = new System.Drawing.Size(71, 17);
             this.SelectAllCheckBox.TabIndex = 11;
             this.SelectAllCheckBox.Text = "Select all";
             this.SelectAllCheckBox.UseVisualStyleBackColor = true;
@@ -168,7 +170,7 @@
             this.UsernameIDTextBox.ForeColor = System.Drawing.Color.White;
             this.UsernameIDTextBox.Location = new System.Drawing.Point(284, 14);
             this.UsernameIDTextBox.Name = "UsernameIDTextBox";
-            this.UsernameIDTextBox.Size = new System.Drawing.Size(141, 25);
+            this.UsernameIDTextBox.Size = new System.Drawing.Size(141, 21);
             this.UsernameIDTextBox.TabIndex = 3;
             // 
             // PasswordTextBox
@@ -178,7 +180,7 @@
             this.PasswordTextBox.ForeColor = System.Drawing.Color.White;
             this.PasswordTextBox.Location = new System.Drawing.Point(494, 14);
             this.PasswordTextBox.Name = "PasswordTextBox";
-            this.PasswordTextBox.Size = new System.Drawing.Size(129, 25);
+            this.PasswordTextBox.Size = new System.Drawing.Size(129, 21);
             this.PasswordTextBox.TabIndex = 5;
             // 
             // password
@@ -186,7 +188,7 @@
             this.password.AutoSize = true;
             this.password.Location = new System.Drawing.Point(431, 17);
             this.password.Name = "password";
-            this.password.Size = new System.Drawing.Size(65, 17);
+            this.password.Size = new System.Drawing.Size(57, 13);
             this.password.TabIndex = 4;
             this.password.Text = "password";
             this.password.UseMnemonic = false;
@@ -196,7 +198,7 @@
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(3, 3);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(106, 17);
+            this.label3.Size = new System.Drawing.Size(92, 13);
             this.label3.TabIndex = 0;
             this.label3.Text = "Root namespace";
             // 
@@ -206,7 +208,7 @@
             this.RootNamespaceTextBox.ForeColor = System.Drawing.Color.White;
             this.RootNamespaceTextBox.Location = new System.Drawing.Point(101, 0);
             this.RootNamespaceTextBox.Name = "RootNamespaceTextBox";
-            this.RootNamespaceTextBox.Size = new System.Drawing.Size(128, 25);
+            this.RootNamespaceTextBox.Size = new System.Drawing.Size(128, 21);
             this.RootNamespaceTextBox.TabIndex = 1;
             // 
             // label4
@@ -214,7 +216,7 @@
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(232, 3);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(132, 17);
+            this.label4.Size = new System.Drawing.Size(114, 13);
             this.label4.TabIndex = 2;
             this.label4.Text = "Secondry namespace";
             // 
@@ -224,7 +226,7 @@
             this.SecondryNamespaceTextBox.ForeColor = System.Drawing.Color.White;
             this.SecondryNamespaceTextBox.Location = new System.Drawing.Point(358, 0);
             this.SecondryNamespaceTextBox.Name = "SecondryNamespaceTextBox";
-            this.SecondryNamespaceTextBox.Size = new System.Drawing.Size(128, 25);
+            this.SecondryNamespaceTextBox.Size = new System.Drawing.Size(128, 21);
             this.SecondryNamespaceTextBox.TabIndex = 3;
             // 
             // GenerateButton
@@ -236,7 +238,7 @@
             this.GenerateButton.Location = new System.Drawing.Point(636, 527);
             this.GenerateButton.Name = "GenerateButton";
             this.GenerateButton.Size = new System.Drawing.Size(75, 23);
-            this.GenerateButton.TabIndex = 14;
+            this.GenerateButton.TabIndex = 16;
             this.GenerateButton.Text = "Generate";
             this.GenerateButton.UseVisualStyleBackColor = false;
             this.GenerateButton.Click += new System.EventHandler(this.GenerateButton_Click);
@@ -246,25 +248,27 @@
             this.label5.AutoSize = true;
             this.label5.Location = new System.Drawing.Point(3, 43);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(39, 17);
-            this.label5.TabIndex = 4;
+            this.label5.Size = new System.Drawing.Size(34, 13);
+            this.label5.TabIndex = 5;
             this.label5.Text = "Table";
             // 
             // TableTextBox
             // 
             this.TableTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(100)))));
             this.TableTextBox.ForeColor = System.Drawing.Color.White;
-            this.TableTextBox.Location = new System.Drawing.Point(43, 40);
+            this.TableTextBox.Location = new System.Drawing.Point(68, 40);
             this.TableTextBox.Name = "TableTextBox";
-            this.TableTextBox.Size = new System.Drawing.Size(68, 25);
-            this.TableTextBox.TabIndex = 5;
+            this.TableTextBox.Size = new System.Drawing.Size(146, 21);
+            this.TableTextBox.TabIndex = 6;
             // 
             // label6
             // 
+            this.label6.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.label6.Location = new System.Drawing.Point(0, 24);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(697, 13);
-            this.label6.TabIndex = 20;
+            this.label6.TabIndex = 4;
             this.label6.Text = "----------------------------------------------------------------------------Attri" +
     "butes---------------------------------------------------------------------------" +
     "-";
@@ -273,64 +277,64 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(117, 43);
+            this.label7.Location = new System.Drawing.Point(220, 43);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(75, 17);
-            this.label7.TabIndex = 6;
+            this.label7.Size = new System.Drawing.Size(64, 13);
+            this.label7.TabIndex = 7;
             this.label7.Text = "Primary key";
             // 
             // PrimaryKeyTextBox
             // 
             this.PrimaryKeyTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(100)))));
             this.PrimaryKeyTextBox.ForeColor = System.Drawing.Color.White;
-            this.PrimaryKeyTextBox.Location = new System.Drawing.Point(187, 40);
+            this.PrimaryKeyTextBox.Location = new System.Drawing.Point(291, 40);
             this.PrimaryKeyTextBox.Name = "PrimaryKeyTextBox";
-            this.PrimaryKeyTextBox.Size = new System.Drawing.Size(98, 25);
-            this.PrimaryKeyTextBox.TabIndex = 7;
+            this.PrimaryKeyTextBox.Size = new System.Drawing.Size(145, 21);
+            this.PrimaryKeyTextBox.TabIndex = 8;
             // 
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(291, 43);
+            this.label8.Location = new System.Drawing.Point(3, 97);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(69, 17);
-            this.label8.TabIndex = 8;
+            this.label8.Size = new System.Drawing.Size(61, 13);
+            this.label8.TabIndex = 17;
             this.label8.Text = "Computed";
             // 
             // ComputedColumnTextBox
             // 
             this.ComputedColumnTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(100)))));
             this.ComputedColumnTextBox.ForeColor = System.Drawing.Color.White;
-            this.ComputedColumnTextBox.Location = new System.Drawing.Point(358, 40);
+            this.ComputedColumnTextBox.Location = new System.Drawing.Point(70, 94);
             this.ComputedColumnTextBox.Name = "ComputedColumnTextBox";
-            this.ComputedColumnTextBox.Size = new System.Drawing.Size(131, 25);
-            this.ComputedColumnTextBox.TabIndex = 9;
+            this.ComputedColumnTextBox.Size = new System.Drawing.Size(144, 21);
+            this.ComputedColumnTextBox.TabIndex = 18;
             // 
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(495, 43);
+            this.label9.Location = new System.Drawing.Point(443, 43);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(50, 17);
-            this.label9.TabIndex = 10;
+            this.label9.Size = new System.Drawing.Size(46, 13);
+            this.label9.TabIndex = 9;
             this.label9.Text = "Identity";
             // 
             // IdentityColumnTextBox
             // 
             this.IdentityColumnTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(100)))));
             this.IdentityColumnTextBox.ForeColor = System.Drawing.Color.White;
-            this.IdentityColumnTextBox.Location = new System.Drawing.Point(547, 40);
+            this.IdentityColumnTextBox.Location = new System.Drawing.Point(558, 40);
             this.IdentityColumnTextBox.Name = "IdentityColumnTextBox";
-            this.IdentityColumnTextBox.Size = new System.Drawing.Size(131, 25);
-            this.IdentityColumnTextBox.TabIndex = 11;
+            this.IdentityColumnTextBox.Size = new System.Drawing.Size(139, 21);
+            this.IdentityColumnTextBox.TabIndex = 10;
             // 
             // label10
             // 
             this.label10.AutoSize = true;
             this.label10.Location = new System.Drawing.Point(3, 70);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(63, 17);
-            this.label10.TabIndex = 12;
+            this.label10.Size = new System.Drawing.Size(59, 13);
+            this.label10.TabIndex = 11;
             this.label10.Text = "Allow null";
             // 
             // AllowNullTextBox
@@ -339,44 +343,44 @@
             this.AllowNullTextBox.ForeColor = System.Drawing.Color.White;
             this.AllowNullTextBox.Location = new System.Drawing.Point(68, 67);
             this.AllowNullTextBox.Name = "AllowNullTextBox";
-            this.AllowNullTextBox.Size = new System.Drawing.Size(113, 25);
-            this.AllowNullTextBox.TabIndex = 13;
+            this.AllowNullTextBox.Size = new System.Drawing.Size(146, 21);
+            this.AllowNullTextBox.TabIndex = 12;
             // 
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(187, 70);
+            this.label11.Location = new System.Drawing.Point(220, 70);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(73, 17);
-            this.label11.TabIndex = 14;
+            this.label11.Size = new System.Drawing.Size(65, 13);
+            this.label11.TabIndex = 13;
             this.label11.Text = "Max length";
             // 
             // MaxLengthTextBox
             // 
             this.MaxLengthTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(100)))));
             this.MaxLengthTextBox.ForeColor = System.Drawing.Color.White;
-            this.MaxLengthTextBox.Location = new System.Drawing.Point(258, 67);
+            this.MaxLengthTextBox.Location = new System.Drawing.Point(291, 67);
             this.MaxLengthTextBox.Name = "MaxLengthTextBox";
-            this.MaxLengthTextBox.Size = new System.Drawing.Size(113, 25);
-            this.MaxLengthTextBox.TabIndex = 15;
+            this.MaxLengthTextBox.Size = new System.Drawing.Size(145, 21);
+            this.MaxLengthTextBox.TabIndex = 14;
             // 
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(377, 70);
+            this.label12.Location = new System.Drawing.Point(442, 70);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(125, 17);
-            this.label12.TabIndex = 16;
+            this.label12.Size = new System.Drawing.Size(110, 13);
+            this.label12.TabIndex = 15;
             this.label12.Text = "Repository interface";
             // 
             // RepositoryInterfaceTextBox
             // 
             this.RepositoryInterfaceTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(100)))));
             this.RepositoryInterfaceTextBox.ForeColor = System.Drawing.Color.White;
-            this.RepositoryInterfaceTextBox.Location = new System.Drawing.Point(493, 67);
+            this.RepositoryInterfaceTextBox.Location = new System.Drawing.Point(558, 67);
             this.RepositoryInterfaceTextBox.Name = "RepositoryInterfaceTextBox";
-            this.RepositoryInterfaceTextBox.Size = new System.Drawing.Size(185, 25);
-            this.RepositoryInterfaceTextBox.TabIndex = 17;
+            this.RepositoryInterfaceTextBox.Size = new System.Drawing.Size(139, 21);
+            this.RepositoryInterfaceTextBox.TabIndex = 16;
             // 
             // ModelGeneratingProgressBar
             // 
@@ -397,6 +401,8 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.ItemsPanel.Controls.Add(this.RepositoryInterfaceTextBox);
             this.ItemsPanel.Controls.Add(this.label12);
+            this.ItemsPanel.Controls.Add(this.RepositoryNameTextBox);
+            this.ItemsPanel.Controls.Add(this.label14);
             this.ItemsPanel.Controls.Add(this.MaxLengthTextBox);
             this.ItemsPanel.Controls.Add(this.label11);
             this.ItemsPanel.Controls.Add(this.UniqueAttributeTextBox);
@@ -416,9 +422,9 @@
             this.ItemsPanel.Controls.Add(this.label4);
             this.ItemsPanel.Controls.Add(this.RootNamespaceTextBox);
             this.ItemsPanel.Controls.Add(this.label3);
-            this.ItemsPanel.Location = new System.Drawing.Point(14, 396);
+            this.ItemsPanel.Location = new System.Drawing.Point(14, 380);
             this.ItemsPanel.Name = "ItemsPanel";
-            this.ItemsPanel.Size = new System.Drawing.Size(697, 125);
+            this.ItemsPanel.Size = new System.Drawing.Size(697, 141);
             this.ItemsPanel.TabIndex = 12;
             this.ItemsPanel.Visible = false;
             // 
@@ -426,18 +432,18 @@
             // 
             this.UniqueAttributeTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(100)))));
             this.UniqueAttributeTextBox.ForeColor = System.Drawing.Color.White;
-            this.UniqueAttributeTextBox.Location = new System.Drawing.Point(68, 94);
+            this.UniqueAttributeTextBox.Location = new System.Drawing.Point(291, 94);
             this.UniqueAttributeTextBox.Name = "UniqueAttributeTextBox";
-            this.UniqueAttributeTextBox.Size = new System.Drawing.Size(113, 25);
-            this.UniqueAttributeTextBox.TabIndex = 19;
+            this.UniqueAttributeTextBox.Size = new System.Drawing.Size(145, 21);
+            this.UniqueAttributeTextBox.TabIndex = 20;
             // 
             // label13
             // 
             this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(3, 97);
+            this.label13.Location = new System.Drawing.Point(220, 97);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(49, 17);
-            this.label13.TabIndex = 18;
+            this.label13.Size = new System.Drawing.Size(45, 13);
+            this.label13.TabIndex = 19;
             this.label13.Text = "Unique";
             // 
             // UserIDCheckBox
@@ -445,7 +451,7 @@
             this.UserIDCheckBox.AutoSize = true;
             this.UserIDCheckBox.Location = new System.Drawing.Point(201, 16);
             this.UserIDCheckBox.Name = "UserIDCheckBox";
-            this.UserIDCheckBox.Size = new System.Drawing.Size(89, 21);
+            this.UserIDCheckBox.Size = new System.Drawing.Size(77, 17);
             this.UserIDCheckBox.TabIndex = 2;
             this.UserIDCheckBox.Text = "Username";
             this.UserIDCheckBox.UseVisualStyleBackColor = true;
@@ -460,7 +466,7 @@
             this.SaveModelButton.Location = new System.Drawing.Point(538, 527);
             this.SaveModelButton.Name = "SaveModelButton";
             this.SaveModelButton.Size = new System.Drawing.Size(92, 23);
-            this.SaveModelButton.TabIndex = 14;
+            this.SaveModelButton.TabIndex = 15;
             this.SaveModelButton.Text = "Save model";
             this.SaveModelButton.UseVisualStyleBackColor = false;
             this.SaveModelButton.Click += new System.EventHandler(this.SaveModelButton_Click);
@@ -479,9 +485,27 @@
             this.OpenModelButton.UseVisualStyleBackColor = false;
             this.OpenModelButton.Click += new System.EventHandler(this.OpenModelButton_Click);
             // 
-            // Form1
+            // label14
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
+            this.label14.AutoSize = true;
+            this.label14.Location = new System.Drawing.Point(443, 97);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(93, 13);
+            this.label14.TabIndex = 21;
+            this.label14.Text = "Repository name";
+            // 
+            // RepositoryNameTextBox
+            // 
+            this.RepositoryNameTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(100)))));
+            this.RepositoryNameTextBox.ForeColor = System.Drawing.Color.White;
+            this.RepositoryNameTextBox.Location = new System.Drawing.Point(558, 94);
+            this.RepositoryNameTextBox.Name = "RepositoryNameTextBox";
+            this.RepositoryNameTextBox.Size = new System.Drawing.Size(139, 21);
+            this.RepositoryNameTextBox.TabIndex = 22;
+            // 
+            // MainForm
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(69)))), ((int)(((byte)(98)))));
             this.ClientSize = new System.Drawing.Size(722, 564);
@@ -505,7 +529,7 @@
             this.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.Color.White;
             this.MinimumSize = new System.Drawing.Size(738, 603);
-            this.Name = "Form1";
+            this.Name = "MainForm";
             this.Text = "Form1";
             this.ItemsPanel.ResumeLayout(false);
             this.ItemsPanel.PerformLayout();
@@ -553,6 +577,8 @@
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Button SaveModelButton;
         private System.Windows.Forms.Button OpenModelButton;
+        private System.Windows.Forms.TextBox RepositoryNameTextBox;
+        private System.Windows.Forms.Label label14;
     }
 }
 

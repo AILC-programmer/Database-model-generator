@@ -12,3 +12,7 @@ With this program, you can effortlessly generate models and integrate them into 
 ### Primary Key: Designate primary key columns.
 ### Table: Specify the table to which the column belongs.
 ### Unique: Ensure that column values are unique across the table.
+
+## Alternatively, you could rephrase the sentence as follows:
+For better usability, consider creating a library within your project and incorporating the files from the DataLayer folder.
+

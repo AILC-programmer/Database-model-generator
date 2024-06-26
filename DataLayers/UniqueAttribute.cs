@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CafeParty.WindowsApp.DataLayers
+namespace DataLayers
 {
     [AttributeUsage(AttributeTargets.Property | AttributeTargets.Field, Inherited = false)]
     public class UniqueAttribute : Attribute

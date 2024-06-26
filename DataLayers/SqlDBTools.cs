@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Data.SqlClient;
 using System.Threading.Tasks;
 
-namespace CafeParty.WindowsApp.DataLayers
+namespace DataLayers
 {
     public class SqlDBTools
     {

@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace CafeParty.WindowsApp.DataLayers
+namespace DataLayers
 {
     [AttributeUsage(AttributeTargets.Property | AttributeTargets.Field, AllowMultiple = false)]
     public class MaxLengthAttribute : Attribute

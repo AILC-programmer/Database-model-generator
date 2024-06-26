@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace CafeParty.WindowsApp.DataLayers
+namespace DataLayers
 {
     [AttributeUsage(AttributeTargets.Property, AllowMultiple = false)]
     public class PrimaryKeyAttribute : Attribute { }

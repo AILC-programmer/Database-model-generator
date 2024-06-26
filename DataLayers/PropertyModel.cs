@@ -1,6 +1,6 @@
 ﻿using System.Reflection;
 
-namespace CafeParty.WindowsApp.DataLayers
+namespace DataLayers
 {
     public class PropertyModel
     {

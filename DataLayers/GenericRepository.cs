@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CafeParty.WindowsApp.DataLayers
+namespace DataLayers
 {
     public class GenericRepository<TEntity> : IRepository<TEntity>
     {

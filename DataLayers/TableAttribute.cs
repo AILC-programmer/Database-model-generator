@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace CafeParty.WindowsApp.DataLayers
+namespace DataLayers
 {
     [AttributeUsage(AttributeTargets.Class, AllowMultiple = false)]
     public class TableAttribute : Attribute

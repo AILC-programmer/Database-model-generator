@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Threading.Tasks;
 
-namespace CafeParty.WindowsApp.DataLayers
+namespace DataLayers
 {
     public interface IRepository<TEntity>
     {

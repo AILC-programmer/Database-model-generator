@@ -61,13 +61,14 @@
             this.RepositoryInterfaceTextBox = new System.Windows.Forms.TextBox();
             this.ModelGeneratingProgressBar = new System.Windows.Forms.ProgressBar();
             this.ItemsPanel = new System.Windows.Forms.Panel();
+            this.RepositoryNameTextBox = new System.Windows.Forms.TextBox();
+            this.label14 = new System.Windows.Forms.Label();
             this.UniqueAttributeTextBox = new System.Windows.Forms.TextBox();
             this.label13 = new System.Windows.Forms.Label();
             this.UserIDCheckBox = new System.Windows.Forms.CheckBox();
             this.SaveModelButton = new System.Windows.Forms.Button();
             this.OpenModelButton = new System.Windows.Forms.Button();
-            this.label14 = new System.Windows.Forms.Label();
-            this.RepositoryNameTextBox = new System.Windows.Forms.TextBox();
+            this.NumOfSelectedItemsLabel = new System.Windows.Forms.Label();
             this.ItemsPanel.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -137,6 +138,7 @@
             this.TablesCheckedListBox.Name = "TablesCheckedListBox";
             this.TablesCheckedListBox.Size = new System.Drawing.Size(698, 276);
             this.TablesCheckedListBox.TabIndex = 10;
+            this.TablesCheckedListBox.ItemCheck += new System.Windows.Forms.ItemCheckEventHandler(this.TablesCheckedListBox_ItemCheck);
             // 
             // TablesReaderProgressBar
             // 
@@ -428,6 +430,24 @@
             this.ItemsPanel.TabIndex = 12;
             this.ItemsPanel.Visible = false;
             // 
+            // RepositoryNameTextBox
+            // 
+            this.RepositoryNameTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(100)))));
+            this.RepositoryNameTextBox.ForeColor = System.Drawing.Color.White;
+            this.RepositoryNameTextBox.Location = new System.Drawing.Point(558, 94);
+            this.RepositoryNameTextBox.Name = "RepositoryNameTextBox";
+            this.RepositoryNameTextBox.Size = new System.Drawing.Size(139, 21);
+            this.RepositoryNameTextBox.TabIndex = 22;
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Location = new System.Drawing.Point(443, 97);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(93, 13);
+            this.label14.TabIndex = 21;
+            this.label14.Text = "Repository name";
+            // 
             // UniqueAttributeTextBox
             // 
             this.UniqueAttributeTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(100)))));
@@ -485,23 +505,14 @@
             this.OpenModelButton.UseVisualStyleBackColor = false;
             this.OpenModelButton.Click += new System.EventHandler(this.OpenModelButton_Click);
             // 
-            // label14
+            // NumOfSelectedItemsLabel
             // 
-            this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(443, 97);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(93, 13);
-            this.label14.TabIndex = 21;
-            this.label14.Text = "Repository name";
-            // 
-            // RepositoryNameTextBox
-            // 
-            this.RepositoryNameTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(100)))));
-            this.RepositoryNameTextBox.ForeColor = System.Drawing.Color.White;
-            this.RepositoryNameTextBox.Location = new System.Drawing.Point(558, 94);
-            this.RepositoryNameTextBox.Name = "RepositoryNameTextBox";
-            this.RepositoryNameTextBox.Size = new System.Drawing.Size(139, 21);
-            this.RepositoryNameTextBox.TabIndex = 22;
+            this.NumOfSelectedItemsLabel.AutoSize = true;
+            this.NumOfSelectedItemsLabel.Location = new System.Drawing.Point(17, 358);
+            this.NumOfSelectedItemsLabel.Name = "NumOfSelectedItemsLabel";
+            this.NumOfSelectedItemsLabel.Size = new System.Drawing.Size(92, 13);
+            this.NumOfSelectedItemsLabel.TabIndex = 17;
+            this.NumOfSelectedItemsLabel.Text = "Selected items: 0";
             // 
             // MainForm
             // 
@@ -509,6 +520,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(69)))), ((int)(((byte)(98)))));
             this.ClientSize = new System.Drawing.Size(722, 564);
+            this.Controls.Add(this.NumOfSelectedItemsLabel);
             this.Controls.Add(this.ModelGeneratingProgressBar);
             this.Controls.Add(this.UserIDCheckBox);
             this.Controls.Add(this.ItemsPanel);
@@ -579,6 +591,7 @@
         private System.Windows.Forms.Button OpenModelButton;
         private System.Windows.Forms.TextBox RepositoryNameTextBox;
         private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Label NumOfSelectedItemsLabel;
     }
 }
 

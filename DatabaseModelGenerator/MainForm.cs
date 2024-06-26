@@ -328,5 +328,19 @@ namespace DatabaseModelGenerator
             UniqueAttributeTextBox.Text = model.Unique;
 
         }
+
+        private void TablesCheckedListBox_ItemCheck(object sender, ItemCheckEventArgs e)
+        {
+            int count = TablesCheckedListBox.CheckedItems.Count;
+            if (e.NewValue == CheckState.Checked)
+            {
+                count++; // increment count if item is being checked
+            }
+            else
+            {
+                count--; // decrement count if item is being unchecked
+            }
+            NumOfSelectedItemsLabel.Text = $"Selected items: {count}";
+        }
     }
 }
